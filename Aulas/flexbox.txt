@@ -1,0 +1,58 @@
+Objetivo: apresentar fundamentos e aplicações da propriedade flexbox na criação de layouts responsivos, sem a necessidade a definição de valores fixos.
+
+conhecer a estrutura basica
+
+entender a diferença entre flex container e flex item
+
+conhecer inicialmente alguma propriedades
+
+suporte:
+
+foi projetado como modelo de layout unidimensional e como um metodo q pode oferecer distrivuição de espaço entre itens em uma interface e recursos de alinhamento.
+
+FLEX CONTAINER
+
+é uma tag q envolve os itens, sera nela q iremos aplicar a propriedade "display:flex". Transforma todos os seus itens filhos em flex itens.
+
+propriedades relacionadas:
+display
+flex-direction
+flex-wrap
+flex.flow
+justify-content
+align-items
+align-content
+
+
+FLEX ITEM
+são os elementos filhos diretos do Flex container. E tambem podem se tornar Flex container
+
+DISPLAY FLEX
+torna a tag um elemento do tipo flex container, e assim automaticamento todos os seus filhos diretos desta tag, tornam-se em flex itens.
+
+FLEX-DIORECTION
+é a propriedade que estabelece o eixo principal do container, definindo assim a direção q os flex items são colocados no flex container.
+
+flex-warp
+
+é a propriedade que define se os itens devem ou n quebrar a linha.
+Por padrão eles n quebram linhas, isso faz com q os flex itens sejam compactados alem do limite do conteudo.
+
+wrap: permite a quebra de linha assim q um dos flex itens n puder mais ser compactado.
+
+FLEX-FLOW
+
+é um atalho para as propriedades flex-direction e flex-wrap.
+porem seu uso n é tão comum, visto q, quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap q é nowrap.
+
+JUSTIFY CONTENT
+essa propriedade vai se encarregar de alinhar os itens dentro do container de acordo com a direção pretendidade e tratar da distribuição de espaçamento entre eles.
+obs: caso seus itens esteja ocupando 100% de todo o container, ela n se aplica
+
+ALIGN-ITEMS
+trata do alinhamneto dos flex itens de acordo com o eixo do container.
+
+
+
+
+
