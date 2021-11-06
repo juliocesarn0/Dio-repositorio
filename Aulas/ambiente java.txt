@@ -1,0 +1,146 @@
+O QUE PRECISAMOS SABER SOBRE JAVA:
+
+Java é uma linguagem de programação e plataforma computacional lançada em 1995 pela Sun Microsystems, por um time comandado por James Gosling. Anos depois foi adquirida pela Oracle.
+
+diferente de outras linguagens de programação, q são compiladas para códifo nativo,o Java é compilado para um bytecode q é interpretado por uma maquina virtual.
+
+O QUE É O COMPILADOR
+
+Um compilador é um programa q , a partir de um código fonte, cria um programa semanticamente equivalente, porem escrito em outra linguagem, código objeto. um compilador traduz um programa de uma linguagem textual para uma linguagem de máquina, especifica para um processador e sistema operacional.
+
+O nome compilador é usado principalmente para os programas q traduzem o código fonte de uma linguagem de programação de alto nivel para uma linguagem de programação de baixo nivel (por exemplo, Assembly ou código de máquina).
+
+O QUE É O BYTECODE
+
+É  o código originado da compilação de programas Java.
+
+O bytecode é o programa interpretado e executado pela máquina virtual Java, JVM.
+
+O QUE É A jvm? aNTES... O QUE É UMA VM?
+
+Primeiramente explicar o q é uma VM.
+
+Uma maquina virtual, ou virtual machine, é um software q simula uma maquina fisica e consegue executar varios programas, gerenciar processos, memoria e arquivos. Tudo isso faz parte de uma plataforma com memoria, processador e outros recursos totalmente virtuais, sem dependencia do hardware.
+
+O QUE É A JVM?
+
+A JVM é uma maquina virtual q executa programas Java, executando os bytecodes em linguagem de maquina para cada sistema operacional.
+
+Em linguagens compiladas diretamente para um sistema operacional (SO) especifico, esse programa não ira executar em outro SO, havendo a necessidade de compilar uma versção do software para cada SO.
+
+com o java, compilamos para a JVM, o bytecode sera executado pela maquina virtual, e nção diretamente pelo SO, assim, o software escrito em Java possui portabilidade para qualquer sistema operacional, porem, cada JVM deve ser construida para um SO especifico.
+
+O QUE É JRE
+
+JRE significa Java runtime Environment, ou Ambiente de execução do Java, é composto pela Java Virtual Machine (JVM), bibliotecas e APIs da linguagem Java e outros componentes para suporte da plataforma Java.
+
+ele representa a parte responsavel pela execução do software Java
+
+O QUE É A JDK?
+
+Java Development Kit (JDK), kit de desenvolvimento Java, é um conjunto de utilitarios q permitem criar software para a plataforma Java. é composto pelo compilador Java, bibliotecas da linguagem, ferramentas e a JRE.
+
+O QUE É JAVA SE?
+
+Java Standard Edition (SE), é a distribuição minima da plataforma de desenvolvimento de aplicações java.
+
+openJDK é a implementação de referencia opensource da plataforma Java, Java SE, q ainda é mantida pela oracle.
+
+O QUE É JAVA EE?
+
+Java Enterprise Edition, é uma extensção da Java SE q possui suporte a desenvolvimento de sistemas corporativaos.
+
+Alem do minimo da plataforma, o Java EE possui diversas especificações de partes da infraestrutura de aplicações, como acesso a banco de dados, mensageira, serviços web, parser de arquivos e outras.
+
+Servidores de aplicações Java EE, sabem seguir essas especificações e implementar os rescursos para os usuarios.
+
+Ex.: JBoss(RedHat), Weblogic (oracle), WebSphere(IBM) e Glassfish = implementação de referencias opensource. 
+
+O QUE É JAKARTA EE?
+
+com a falta de investimento da Oracle no Java, ela cedeu todo o código, implementações e especificações do Java EE para a Eclipse Foundation, mas como o nome Java EE é uma marca registrada, foi escolhido o nome Jakarta EE.
+
+agora  a evolução da especificações e padrões do Java sera feiro sob o nome Jakarta EE, com compatibilidade com o Java EE.
+
+CARACTERISTICA DO PROJETO JAVA
+
+Wrappers
+
+são objetos q representam os primitivos
+auto-boxing e unboxing
+
+
+modificadores de acesso 
+Public
+public pode ser acessada de qualquer lugar por qualquer entidade q possa visualizar a classe a q ela pertence.
+private
+os metodos e atributos da classe definidos como privados n podem ser acessados ou usados por nenhuma outra classe. Esses atributos e métodos tambem podem ser visualizados pelas classes herdadas.
+Protected
+Torna o membro acessivel as classes do mesmo pacote ou atraves de herança, seus membros heraddos não são acessiveis a outras classes fora do pacote em q foram declarados
+Default(padrão)
+A classe e/ou seus membros são acessiveis somente por classes do mesmo pacote, na sua declaração não é definido nenhum tipo de modificador, sendo este identificado pelo compilador.
+
+ABSTRACT
+Esse modificador n é aplicado nas variaveis, apenas em classes e metodos. Uma classe abstrata n pode ser instanciada. Se houver alguma declaração de um método como abstract (abstrato), a classe tambem deve ser marcada como abstract.
+
+STATIC
+É usado para a criação de uma variavel q podera ser acessada por todas as instancias de objetos desta classe como uma variavel comum, ou seja, a variavel criada sera a mesma em todas as instancias e quando seu conteudo é modificado numa das instancias, a modificação ocorre em todas as demais.E nas declarações de métodos ajudam no acesso direto á classe, portanto n é necessarios instanciar um objeto para acessar o metodo.
+
+Final
+Quando é aplicado na classe, n permite estender, nos metodos impede q o mesmo seja sobrescrito(overriding) na subclasse, e nos valores de variaveis n pode ser alterado depois q ja tenha sido atribuido um valor.
+
+Interfaces 
+ Metodos abstratos
+devem ser implementados por todos;
+novos metodos quebram as implementações
+Metodos Default
+São herdados a todos q implementam;
+Herança multipla
+
+ENUMS
+Basicamente é dicionarios de dados imutavel;
+não é permitido criar novas instancias;
+o construtor é sempre declarado como private;
+por convenção, por serem objetos constantes e imutaveis (static final). os nomes em MAIUSCULOS.
+
+
+STRING 
+É uma sequencia de caracteres;
+
+Pacote java.lang;
+
+
+DATE();
+
+Este construtor vai alocar um objeto da classe date e o inicializara com o millissegundo mais proximo do periodo da sua execução.
+
+Date(long date)
+
+Diferente do construtor anterior, esse construtor espera q vc passe os milissegundos com base padrão de tempo (epoch) q usa como referencia 1 de janeiro de 1970 00:00:00
+
+oq é epoch?
+o epoch timestamp é um padrão alargamente aceito para representar uma data como um inteiro 32-bits a partir do inicio do Unix Epoch..."
+
+EXCEPTIONS (EXCESSÃO)
+
+Exceções são todos os erros q ocoreem durante o processamento de um metodo q podem ser esperados ou n esperados. como o termo ja diz, "exceptions" são exceções.Falhas q n devem ocorrer rotineiramente no fluxo de um sistema.
+
+Checked Exceptions 
+São exceções espperadas, cujo fluxo ou metodo de um sistema foi preparado para receber. Um bom exemplo é uma exce3ção de negócio, onde se deseja informar um erro caso a exceção esperada ocorra.
+
+Unchecked Exceptions
+São exceções n esperadas para o fluxo ou método de um sistema, um bom exemplo é a famosa NullPointException q ocorre quando se tenta acessar uma referencia de memoria vazia, ou recuperar uma instancia q n existe, dentre outros motivos.
+
+bloco try catch
+O bloco try catch sempre é utilizado quando no processo q sera executado dentro de um metodo é esperado um erro, então cria-se um bloco "protegido" onde qualquer erro q ocorra dentro do trecho "try" é direcionado para o trecho "catch" e sofrera o devido tratamento de erro.
+
+FINALLY
+O finally é um bloco de código q pode ou n ser utilizado junto ao try catch, este trecho de código sempre sera executado independente se ocorrer erro ou n dentro do fluxo onde existe o try catch. Normalmente o finally é usado para liberar recursos ou para dar continuidade em um fluxo q deve ocorrer independente de erro.
+
+Throw e throws
+
+Throws: é a assinatura do metodo q sera retornado caso ocorra erro para o metodo q fez a chamada, dentro de um fluxo encadeado.
+
+Throw: é usado para lançar a excessão desejada, juntamente com a mensagem de erro, para o metodo q fez a chamada.
+
+
